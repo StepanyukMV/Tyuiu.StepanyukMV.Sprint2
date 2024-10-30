@@ -7,6 +7,13 @@ namespace Tyuiu.StepanyukMV.Sprint2.Task1.V17
         {
             DataService ds = new DataService();
 
+            int a = 135;
+            int b = 123;
+            int c = 455;
+            int d = 321;
+            bool[] res = new bool[6];
+            res = ds.GetLogicOperations(a, b, c, d);
+
             Console.Title = "Спринт #2 | Выполнил: Степанюк М.В. | РППб-24-1";
             //Длинна строки 75 символов
             Console.WriteLine("***************************************************************************");
@@ -36,6 +43,11 @@ namespace Tyuiu.StepanyukMV.Sprint2.Task1.V17
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
+
+            for (int i = 0; i < 6; i++)
+            {
+                Console.WriteLine(res[i]);
+            }
         }
     }
 }
