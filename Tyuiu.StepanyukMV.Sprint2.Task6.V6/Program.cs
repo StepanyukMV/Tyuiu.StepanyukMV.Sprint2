@@ -11,7 +11,7 @@ namespace Tyuiu.StepanyukMV.Sprint2.Task6.V6
             //Длинна строки 75 символов
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
-            Console.WriteLine("* Тема: Операции сравнения                                                *");
+            Console.WriteLine("* Тема: Получение результат из Switch                                     *");
             Console.WriteLine("* Задание #6                                                              *");
             Console.WriteLine("* Вариант #6                                                              *");
             Console.WriteLine("* Выполнил: Степанюк Михаил Вадимович | РППб-24-1                         *");

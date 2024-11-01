@@ -1,5 +1,5 @@
-﻿using Tyuiu.StepanyukMV.Sprint2.Task5.V6.Lib;
-namespace Tyuiu.StepanyukMV.Sprint2.Task5.V6
+﻿using Tyuiu.StepanyukMV.Sprint2.Task7.V3.Lib;
+namespace Tyuiu.StepanyukMV.Sprint2.Task7.V3
 {
     internal class Program
     {
@@ -11,33 +11,34 @@ namespace Tyuiu.StepanyukMV.Sprint2.Task5.V6
             //Длинна строки 75 символов
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
-            Console.WriteLine("* Тема: Оператор Switch                                                   *");
-            Console.WriteLine("* Задание #5                                                              *");
-            Console.WriteLine("* Вариант #6                                                              *");
+            Console.WriteLine("* Тема: Добавление к решению итоговых проектов по спринту                 *");
+            Console.WriteLine("* Задание #7                                                              *");
+            Console.WriteLine("* Вариант #3                                                              *");
             Console.WriteLine("* Выполнил: Степанюк Михаил Вадимович | РППб-24-1                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая использует оператор switch вычисляет        *");
-            Console.WriteLine("* требуемое значение и возвращает результат.                              *");
+            Console.WriteLine("* Написать программу на C#, которая запрашивает исходные данные           *");
+            Console.WriteLine("* (вещественные значения) и вычисляет, находится ли точка                 *");
+            Console.WriteLine("* с координатами X,Y в заштрихованной области.                            *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ                                                         *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Введите первую цифру масти:");
-            int value1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите X:");
+            double x = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Введите вторую цифру силы карты:");
-            int value2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите Y:");
+            double y = Convert.ToDouble(Console.ReadLine());
 
-            string res = ds.FindCardNameAndValue(value1, value2);
+            bool res = ds.CheckDotInShadedArea(x, y);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Значение карты:" + res);
+            Console.WriteLine("Точка в закрашенной области:" + res);
         }
     }
 }
