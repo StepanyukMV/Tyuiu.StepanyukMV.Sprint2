@@ -10,11 +10,14 @@ namespace Tyuiu.StepanyukMV.Sprint2.Task7.V3.Lib
 
             bool res;
 
-            if ((Math.Pow(x, 2) + Math.Pow(y - 1, 2) == 1) && (y == (1 - Math.Pow(x, 2))) && (x >=-1 && x<=1))
+            if ((Math.Pow(x, 2) + Math.Pow(y - 1, 2) <= 1) && (y <= (1 - Math.Pow(x, 2))) && (x >=-1 && x<=1))
             {
                 res = true;
             } 
-            else { res = false; }
+            else 
+            { 
+                res = false; 
+            }
 
             return res;
 
